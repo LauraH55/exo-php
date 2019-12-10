@@ -69,4 +69,20 @@ for ($numero = 0; $numero < count($person); $numero++){
 
 
 
+
+for ($i=1 ; $i<=8 ; $i++) { // construit 8 lignes
+
+  for ($j=1 ; $j<=8 ; $j++) {// tu démarres de 0, tant que i est inférieur à 8 affiches 8 étoiles..
+      if ($j > $i)// pour faire un triangle rectangle
+          echo '*'; // nouveau for construit 8 étoiles dans chaque lignes (carré)
+
+      }
+        echo '<br>';
+}
+
+
+
+
+
+
 ?>
