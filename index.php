@@ -80,6 +80,43 @@ for ($i=1 ; $i<=8 ; $i++) { // construit 8 lignes
         echo '<br>';
 }
 
+$ligne = 7; // triange isocèle
+
+for ($i = $ligne; $i > 0; $i--)
+{
+  for($j = 0; $j <= $ligne; $j++)
+  {
+    if ($j > $i)
+      echo '*';
+    if ($j < $i)
+      echo '&nbsp;'; //c'est l'entité html de l'espace. autrement dit c'est un espace!
+  }
+  echo "<br />";
+}
+
+
+
+echo 'Nombre aléatoire entre 0 et 100 : <b>'.rand(0, 100).'</b><br />';
+  $tableau = []; // en 1er déclare ton tableau
+  for ($i = 0; $i < 10; $i++){ // tant que i est < 10, i++ // tu fais ta boucle
+    $tableau[] = rand(0, 100); // tableau renvoie un entier aléatoire entre 0 et 100
+  }
+
+  var_dump($tableau);
+
+  $sum = array_sum($tableau); //array_sum --> Calcule la somme des valeurs du tableau
+  $moyenne = array_sum($tableau)/count($tableau); // calcul de la moyenne de mon tableau
+
+
+  var_dump($moyenne);
+
+  $nb2 =0;
+  foreach ($tableau as $value) {
+    if ($value <=50){
+      $nb2++;
+    }
+  }
+  var_dump($nb2);
 
 
 
