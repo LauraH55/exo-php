@@ -115,11 +115,19 @@ echo 'Nombre aléatoire entre 0 et 100 : <b>'.rand(0, 100).'</b><br />';
     if ($value <=50){
       $nb2++;
     }
+
   }
   var_dump($nb2);
 
 
 
+  $max = 0;
+  foreach ($tableau as $value) {
+    if ($value > $max){
+      $max = $value;
+    }
+  }
+  var_dump($max);
 
 
 ?>
