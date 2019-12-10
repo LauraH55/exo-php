@@ -122,7 +122,7 @@ echo 'Nombre aléatoire entre 0 et 100 : <b>'.rand(0, 100).'</b><br />';
 
 
   $max = 0;
-  foreach ($tableau as $value) {
+  foreach ($tableau as $value) { //calcule le nombre le plus haut du tableau
     if ($value > $max){
       $max = $value;
     }
